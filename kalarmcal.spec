@@ -28,9 +28,10 @@ BuildRequires: cmake(KF5IdentityManagement)
 BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Gui)
+BuildRequires: cmake(KF5Holidays)
 
 %description
-Calendar support library for KAlarm
+Calendar support library for KAlarm.
 
 %package -n %{libname}
 Summary: Calendar support library for KAlarm
