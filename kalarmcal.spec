@@ -29,6 +29,9 @@ BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Gui)
 BuildRequires: cmake(KF5Holidays)
+BuildRequires: cmake(KF5Akonadi)
+BuildRequires: boost-devel
+BuildRequires: pkgconfig(libical)
 
 %description
 Calendar support library for KAlarm.
