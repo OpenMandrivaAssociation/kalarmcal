@@ -15,9 +15,7 @@ Source0: http://download.kde.org/%{ftpdir}/applications/%{version}/src/%{name}-%
 Summary: Calendar support library for KAlarm
 URL: http://kde.org/
 License: GPL
-Group: System/Libraries
-BuildRequires: cmake
-BuildRequires: ninja
+Group: Graphical desktop/KDE
 BuildRequires: cmake(ECM)
 BuildRequires: cmake(Gettext)
 BuildRequires: cmake(PythonInterp)
