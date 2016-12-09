@@ -3,7 +3,7 @@
 %define devname %mklibname KF5AlarmCal -d
 
 Name: kalarmcal
-Version:	16.08.3
+Version:	16.12.0
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -30,6 +30,7 @@ BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(KF5Akonadi)
 BuildRequires: boost-devel
 BuildRequires: pkgconfig(libical)
+Requires: %{libname} = %{EVRD}
 
 %description
 Calendar support library for KAlarm.
@@ -37,6 +38,7 @@ Calendar support library for KAlarm.
 %package -n %{libname}
 Summary: Calendar support library for KAlarm
 Group: System/Libraries
+Requires: %{name} = %{EVRD}
 
 %description -n %{libname}
 Calendar support library for KAlarm
@@ -58,6 +60,10 @@ Development files (Headers etc.) for %{name}.
 
 %install
 %ninja_install -C build
+
+%files
+%{_sysconfdir}/xdg/kalarmcal.categories
+%{_sysconfdir}/xdg/kalarmcal.renamecategories
 
 %files -n %{libname}
 %{_libdir}/*.so.%{major}*
