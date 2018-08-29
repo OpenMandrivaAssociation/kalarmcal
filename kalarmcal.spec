@@ -27,6 +27,7 @@ BuildRequires: cmake(KF5IdentityManagement)
 BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(Qt5Core)
 BuildRequires: cmake(Qt5Gui)
+BuildRequires: cmake(Qt5Test)
 BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(KF5Akonadi)
 BuildRequires: boost-devel
