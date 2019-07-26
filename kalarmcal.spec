@@ -3,7 +3,7 @@
 %define devname %mklibname KF5AlarmCal -d
 
 Name: kalarmcal
-Version:	19.04.3
+Version:	19.07.80
 %define is_beta %(if test `echo %{version} |cut -d. -f3` -ge 70; then echo -n 1; else echo -n 0; fi)
 %if %{is_beta}
 %define ftpdir unstable
@@ -66,8 +66,8 @@ Development files (Headers etc.) for %{name}.
 %find_lang libkalarmcal5-serializer
 
 %files -f libkalarmcal5.lang -f libkalarmcal5-serializer.lang
-%{_sysconfdir}/xdg/kalarmcal.categories
-%{_sysconfdir}/xdg/kalarmcal.renamecategories
+%{_datadir}/qlogging-categories5/kalarmcal.categories
+%{_datadir}/qlogging-categories5/kalarmcal.renamecategories
 %{_libdir}/qt5/plugins/akonadi_serializer_kalarm.so
 %{_datadir}/akonadi/plugins/serializer
 
