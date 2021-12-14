@@ -32,6 +32,9 @@ BuildRequires: cmake(KF5Holidays)
 BuildRequires: cmake(KF5Akonadi)
 BuildRequires: boost-devel
 BuildRequires: pkgconfig(libical)
+# For QCH format docs
+BuildRequires: doxygen
+BuildRequires: qt5-assistant
 Requires: %{libname} = %{EVRD}
 
 %description
