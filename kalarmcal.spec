@@ -11,7 +11,7 @@ Version:	21.12.2
 %define ftpdir stable
 %endif
 Release:	1
-Source0: http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
+Source0: http://download.kde.org/%{ftpdir}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 Summary: Calendar support library for KAlarm
 URL: http://kde.org/
 License: GPL
